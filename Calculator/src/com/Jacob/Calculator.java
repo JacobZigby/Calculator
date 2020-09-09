@@ -107,6 +107,13 @@ public class Calculator {
         changeResults(result);
         return result;
     }
+
+    //A method that will multiply the lastResult by the new value
+    public double multi(double value){
+        double result = lastResult * value;
+        changeResults(result);
+        return result;
+    }
     
     //I kid you not, I got fed up of rewriting the same thing over and over again, I made a method to do it for me
     private void changeResults(double result){
