@@ -94,16 +94,30 @@ public class Calculator {
         return result;
     }
 
-    //A method that will multiply two integer values together
+    //A method that will return the multiplication of two integer values together
     public int multiply(int value1, int value2){
         int result = value1 * value2;
         changeResults(result);
         return result;
     }
 
-    //A method that will multiply two double values together
+    //A method that will return the multiplication of two double values together
     public double multiply(double value1, double value2){
         double result = value1 * value2;
+        changeResults(result);
+        return result;
+    }
+
+    //A method that will return the divison of vlaue1 by value2
+    public double divid(double value1, double value2){
+        double result = value1 / value2;
+        changeResults(result);
+        return result;
+    }
+
+    //A method that wil return the divison of lastResult by value;
+    public double div(double value){
+        double result = lastResult / value;
         changeResults(result);
         return result;
     }
