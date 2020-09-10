@@ -108,6 +108,13 @@ public class Calculator {
         return result;
     }
 
+    //A method that will multiply the lastResult by the new value
+    public double multi(double value){
+        double result = lastResult * value;
+        changeResults(result);
+        return result;
+    }
+
     //A method that will return the divison of vlaue1 by value2
     public double divid(double value1, double value2){
         double result = value1 / value2;
