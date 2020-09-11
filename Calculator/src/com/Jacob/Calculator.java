@@ -128,6 +128,26 @@ public class Calculator {
         changeResults(result);
         return result;
     }
+
+    //A basic round method that will round up to the tenth value, and if there's a decimal it will be removed
+    public int round(){
+        //This will be used to check if it has a decimal and remove it
+        double decimalCheck = lastResult % 1;
+        int result = (int)lastResult;
+        if(decimalCheck < 1 && decimalCheck % 1 > -1 || lastResult % 1 != 0){
+            result = Integer.parseInt(Double.toString(lastResult).split("\\.")[0]);
+        }
+
+        int tmp = result % 10;
+        if(tmp >= 5)
+            result = result + (10 - tmp);
+        else
+            result -= tmp;
+
+        changeResults(result);
+        return result;
+
+    }
     
     //I kid you not, I got fed up of rewriting the same thing over and over again, I made a method to do it for me
     private void changeResults(double result){
