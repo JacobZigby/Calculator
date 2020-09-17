@@ -123,7 +123,7 @@ public class Calculator {
     }
 
     //A method that wil return the divison of lastResult by value;
-    public double div(double value){
+    public double div(double value) {
         double result = lastResult / value;
         changeResults(result);
         return result;
@@ -148,6 +148,8 @@ public class Calculator {
         return result;
 
     }
+
+
     
     //I kid you not, I got fed up of rewriting the same thing over and over again, I made a method to do it for me
     private void changeResults(double result){
